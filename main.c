@@ -47,15 +47,17 @@ void task3(void){
     unsigned int j=1;
     unsigned int k=0;
     while(1){
+        i=j;
+        j=k;
         k=i+j;
         if(k<j){
         i=0;j=1;k=0;
         }
-        i=j;
-        j=k;
+        else{
         for(int a=0;a<1000000;a++)
             ;
         printf("%u \n\r",k );
+        }       
     }
 }
 
